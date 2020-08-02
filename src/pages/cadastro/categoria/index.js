@@ -7,7 +7,7 @@ function CadastroCategoria() {
   const valoresIniciais = {
     nome: "",
     descricao: "",
-    cor: "",
+    cor: "#000000",
   };
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
@@ -35,19 +35,19 @@ function CadastroCategoria() {
       >
         <FormField
           label="Nome da Categoria"
-          name="categoria"
+          name="nome"
           value={values.nome}
           type="text"
           onChange={handleChange}
         />
-        {/* 
+
         <FormField
           label="Descrição"
           name="descricao"
           value={values.descricao}
           type="text"
           onChange={handleChange}
-        /> */}
+        />
 
         <FormField
           label="Cor"
